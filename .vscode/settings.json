@@ -1,0 +1,23 @@
+{
+  "cSpell.words": [
+    "Biopython",
+    "funcs",
+    "genbank",
+    "heatmaps",
+    "matplotlib",
+    "NCBI",
+    "orjson",
+    "percache",
+    "pyplot",
+    "scipy",
+    "utrs",
+    "vcfpy",
+    "vcfs",
+    "VGAAT"
+  ],
+  "python.formatting.provider": "black",
+  "python.linting.prospectorEnabled": false,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.analysis.typeCheckingMode": "basic"
+}

@@ -1,0 +1,53 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "VGAAT: run all",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/vgaat/vgaat.py",
+            "args": [
+                "${workspaceFolder}/test_data/",
+                "${workspaceFolder}/MN908947_3.gb",
+                "unknown",
+                "${workspaceFolder}/nml_lineage_report.csv",
+                "--log", "DEBUG",
+                "--alpha", "0.05",
+                "--output", "${workspaceFolder}/results.md",
+                "--threads", "1",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+        },
+        {
+            "name": "VGAAT: run all - NO CACHE",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/vgaat/vgaat.py",
+            "args": [
+                "${workspaceFolder}/test_data/",
+                "${workspaceFolder}/MN908947_3.gb",
+                "unknown",
+                "${workspaceFolder}/nml_lineage_report.csv",
+                "--log", "DEBUG",
+                "--alpha", "0.05",
+                "--output", "${workspaceFolder}/results.md",
+                "--threads", "1",
+                "--clear-cache", "True"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+        }
+    ]
+}
